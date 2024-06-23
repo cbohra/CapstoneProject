@@ -1,10 +1,19 @@
 package com.chirag.e_comBackend.model;
 
-import java.util.List;
+import jakarta.persistence.*;
 
+import java.util.List;
+@Entity
 public class Cart {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @OneToMany(mappedBy = "cart", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<CartItem> items;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
     private User user;
 
     // Getters and Setters

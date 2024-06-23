@@ -1,7 +1,6 @@
 package com.chirag.e_comBackend.controller;
 
 import com.chirag.e_comBackend.model.Wishlist;
-import com.chirag.e_comBackend.model.WishlistItem;
 import com.chirag.e_comBackend.service.WishlistService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -17,13 +16,13 @@ public class WishlistController {
     private WishlistService wishlistService;
 
     @PostMapping("/add")
-    public Wishlist addItemToWishlist(@RequestBody WishlistItem wishlistItem) {
-        return wishlistService.addItemToWishlist(wishlistItem);
+    public Wishlist addItemToWishlist(@RequestBody Wishlist wishlist) {
+        return wishlistService.addItemToWishlist(wishlist);
     }
 
     @DeleteMapping("/remove/{itemId}")
-    public Wishlist removeItemFromWishlist(@PathVariable Long itemId) {
-        return wishlistService.removeItemFromWishlist(itemId);
+    public void removeItemFromWishlist(@PathVariable Long itemId) {
+         wishlistService.removeItemFromWishlist(itemId);
     }
 
     @GetMapping("/{wishlistId}")

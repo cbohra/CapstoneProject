@@ -1,0 +1,117 @@
+2024-06-23T15:20:47.405-04:00  WARN 23716 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1d22h11m20s560ms921µs500ns).
+2024-06-23T15:23:45.373-04:00  INFO 23716 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T15:23:45.415-04:00  INFO 23716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-23T15:23:45.431-04:00  INFO 23716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-23T15:23:51.857-04:00  INFO 26220 --- [main] c.c.e_comBackend.EComBackendApplication  : Starting EComBackendApplication using Java 17.0.11 with PID 26220 (C:\Users\bohrac\Desktop\frontend\E-commerce App\e-comBackend\target\classes started by bohrac in C:\Users\bohrac\Desktop\frontend\E-commerce App\e-comBackend)
+2024-06-23T15:23:51.860-04:00  INFO 26220 --- [main] c.c.e_comBackend.EComBackendApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-23T15:23:52.872-04:00  INFO 26220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T15:23:52.952-04:00  INFO 26220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 5 JPA repository interfaces.
+2024-06-23T15:23:53.771-04:00  INFO 26220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-23T15:23:53.785-04:00  INFO 26220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T15:23:53.786-04:00  INFO 26220 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-23T15:23:53.875-04:00  INFO 26220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-23T15:23:53.875-04:00  INFO 26220 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1952 ms
+2024-06-23T15:23:54.088-04:00  INFO 26220 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T15:23:54.180-04:00  INFO 26220 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-23T15:23:54.224-04:00  INFO 26220 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T15:23:54.547-04:00  INFO 26220 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T15:23:54.581-04:00  INFO 26220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-23T15:23:55.082-04:00  INFO 26220 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@595814a1
+2024-06-23T15:23:55.084-04:00  INFO 26220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-23T15:23:55.159-04:00  WARN 26220 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T15:23:55.160-04:00  WARN 26220 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-06-23T15:23:56.149-04:00  INFO 26220 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T15:23:56.318-04:00  INFO 26220 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T15:23:56.788-04:00  WARN 26220 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-23T15:23:57.166-04:00  INFO 26220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-23T15:23:57.177-04:00  INFO 26220 --- [main] c.c.e_comBackend.EComBackendApplication  : Started EComBackendApplication in 5.873 seconds (process running for 6.745)
+2024-06-23T15:36:29.408-04:00  INFO 26220 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23T15:36:29.408-04:00  INFO 26220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-23T15:36:29.411-04:00  INFO 26220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-06-23T15:36:29.568-04:00  WARN 26220 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('.' (code 46)): was expecting double-quote to start field name]
+2024-06-23T15:38:00.176-04:00  WARN 26220 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('.' (code 46)): was expecting double-quote to start field name]
+2024-06-23T15:38:19.040-04:00  INFO 26220 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T15:38:19.043-04:00  INFO 26220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-23T15:38:19.053-04:00  INFO 26220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-23T15:38:22.432-04:00  INFO 35712 --- [main] c.c.e_comBackend.EComBackendApplication  : Starting EComBackendApplication using Java 17.0.11 with PID 35712 (C:\Users\bohrac\Desktop\frontend\E-commerce App\e-comBackend\target\classes started by bohrac in C:\Users\bohrac\Desktop\frontend\E-commerce App\e-comBackend)
+2024-06-23T15:38:22.436-04:00  INFO 35712 --- [main] c.c.e_comBackend.EComBackendApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-23T15:38:23.231-04:00  INFO 35712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T15:38:23.317-04:00  INFO 35712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 5 JPA repository interfaces.
+2024-06-23T15:38:23.974-04:00  INFO 35712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-23T15:38:23.989-04:00  INFO 35712 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T15:38:23.990-04:00  INFO 35712 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-23T15:38:24.066-04:00  INFO 35712 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-23T15:38:24.067-04:00  INFO 35712 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1566 ms
+2024-06-23T15:38:24.287-04:00  INFO 35712 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T15:38:24.372-04:00  INFO 35712 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-23T15:38:24.420-04:00  INFO 35712 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T15:38:24.761-04:00  INFO 35712 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T15:38:24.800-04:00  INFO 35712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-23T15:38:25.161-04:00  INFO 35712 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f24ce45
+2024-06-23T15:38:25.162-04:00  INFO 35712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-23T15:38:25.222-04:00  WARN 35712 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T15:38:25.223-04:00  WARN 35712 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-06-23T15:38:26.332-04:00  INFO 35712 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T15:38:26.427-04:00  INFO 35712 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T15:38:26.856-04:00  WARN 35712 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-23T15:38:27.190-04:00  INFO 35712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-23T15:38:27.198-04:00  INFO 35712 --- [main] c.c.e_comBackend.EComBackendApplication  : Started EComBackendApplication in 5.299 seconds (process running for 5.741)
+2024-06-23T15:38:38.255-04:00  INFO 35712 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T15:38:38.256-04:00  INFO 35712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-23T15:38:38.263-04:00  INFO 35712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-23T15:38:41.599-04:00  INFO 15736 --- [main] c.c.e_comBackend.EComBackendApplication  : Starting EComBackendApplication using Java 17.0.11 with PID 15736 (C:\Users\bohrac\Desktop\frontend\E-commerce App\e-comBackend\target\classes started by bohrac in C:\Users\bohrac\Desktop\frontend\E-commerce App\e-comBackend)
+2024-06-23T15:38:41.602-04:00  INFO 15736 --- [main] c.c.e_comBackend.EComBackendApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-23T15:38:42.354-04:00  INFO 15736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T15:38:42.426-04:00  INFO 15736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 5 JPA repository interfaces.
+2024-06-23T15:38:43.113-04:00  INFO 15736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-23T15:38:43.131-04:00  INFO 15736 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T15:38:43.132-04:00  INFO 15736 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-23T15:38:43.212-04:00  INFO 15736 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-23T15:38:43.213-04:00  INFO 15736 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1544 ms
+2024-06-23T15:38:43.408-04:00  INFO 15736 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T15:38:43.472-04:00  INFO 15736 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-23T15:38:43.524-04:00  INFO 15736 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T15:38:43.863-04:00  INFO 15736 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T15:38:43.891-04:00  INFO 15736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-23T15:38:44.216-04:00  INFO 15736 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41582899
+2024-06-23T15:38:44.218-04:00  INFO 15736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-23T15:38:44.268-04:00  WARN 15736 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T15:38:44.269-04:00  WARN 15736 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-06-23T15:38:45.253-04:00  INFO 15736 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T15:38:45.351-04:00  INFO 15736 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T15:38:45.787-04:00  WARN 15736 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-23T15:38:46.174-04:00  INFO 15736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-23T15:38:46.187-04:00  INFO 15736 --- [main] c.c.e_comBackend.EComBackendApplication  : Started EComBackendApplication in 5.086 seconds (process running for 5.497)
+2024-06-23T15:39:14.554-04:00  INFO 15736 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23T15:39:14.554-04:00  INFO 15736 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-23T15:39:14.556-04:00  INFO 15736 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-06-23T15:39:14.749-04:00  WARN 15736 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('.' (code 46)): was expecting double-quote to start field name]
+2024-06-23T16:49:17.667-04:00  INFO 940 --- [main] c.c.e_comBackend.EComBackendApplication  : Starting EComBackendApplication using Java 17.0.11 with PID 940 (C:\Users\bohrac\Desktop\frontend\E-commerce App\e-comBackend\target\classes started by bohrac in C:\Users\bohrac\Desktop\frontend\E-commerce App\e-comBackend)
+2024-06-23T16:49:17.675-04:00  INFO 940 --- [main] c.c.e_comBackend.EComBackendApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-23T16:49:18.636-04:00  INFO 940 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T16:49:18.724-04:00  INFO 940 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 5 JPA repository interfaces.
+2024-06-23T16:49:19.434-04:00  INFO 940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-23T16:49:19.450-04:00  INFO 940 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T16:49:19.450-04:00  INFO 940 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-23T16:49:19.518-04:00  INFO 940 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-23T16:49:19.518-04:00  INFO 940 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1772 ms
+2024-06-23T16:49:19.752-04:00  INFO 940 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T16:49:19.826-04:00  INFO 940 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-23T16:49:19.874-04:00  INFO 940 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T16:49:20.234-04:00  INFO 940 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T16:49:20.276-04:00  INFO 940 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-23T16:49:20.677-04:00  INFO 940 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6dece1f9
+2024-06-23T16:49:20.679-04:00  INFO 940 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-23T16:49:20.736-04:00  WARN 940 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T16:49:20.738-04:00  WARN 940 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-06-23T16:49:21.908-04:00  INFO 940 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T16:49:22.038-04:00  INFO 940 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T16:49:22.513-04:00  WARN 940 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-23T16:49:22.915-04:00  INFO 940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-23T16:49:22.927-04:00  INFO 940 --- [main] c.c.e_comBackend.EComBackendApplication  : Started EComBackendApplication in 5.797 seconds (process running for 8.404)
+2024-06-23T16:49:38.562-04:00  INFO 940 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23T16:49:38.563-04:00  INFO 940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-23T16:49:38.564-04:00  INFO 940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-06-23T16:56:56.409-04:00  INFO 940 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T16:56:56.412-04:00  INFO 940 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-23T16:56:56.423-04:00  INFO 940 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

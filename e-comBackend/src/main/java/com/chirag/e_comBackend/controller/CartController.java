@@ -15,29 +15,20 @@ public class CartController {
     @Autowired
     private CartService cartService;
 
-    @PostMapping
-    public Cart createCart(@RequestBody Cart cart) {
-        return cartService.createCart(cart);
-    }
-
-    @GetMapping("/{id}")
-    public Cart getCart(@PathVariable Long id) {
-        return cartService.getCartById(id);
-    }
 
     @PostMapping("/{cartId}/items")
-    public CartItem addCartItem(@PathVariable Long cartId, @RequestBody CartItem cartItem) {
-        return cartService.addCartItem(cartId, cartItem);
+    public Cart addCartItem(@PathVariable Long cartId, @RequestBody CartItem cartItem) {
+        return cartService.addItemToCart(cartItem);
     }
 
     @DeleteMapping("/{cartId}/items/{itemId}")
     public void removeCartItem(@PathVariable Long cartId, @PathVariable Long itemId) {
-        cartService.removeCartItem(cartId, itemId);
+        cartService.removeItemFromCart(itemId);
     }
 
     @GetMapping("/{cartId}/items")
     public List<CartItem> getCartItems(@PathVariable Long cartId) {
-        return cartService.getCartItems(cartId);
+        return cartService.getAllCartItems(cartId);
     }
 
     // Add more endpoints as necessary

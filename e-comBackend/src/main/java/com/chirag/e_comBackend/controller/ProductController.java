@@ -15,7 +15,7 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @GetMapping
+    @GetMapping("/getlisting")
     public List<Product> getAllProducts() {
         return productService.getAllProducts();
     }
@@ -25,7 +25,7 @@ public class ProductController {
         return productService.getProductById(id);
     }
 
-    @PostMapping
+    @PostMapping("/listing")
     public Product createProduct(@RequestBody Product product) {
         return productService.saveProduct(product);
     }

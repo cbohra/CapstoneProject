@@ -14,17 +14,17 @@ public class CategoryController {
     @Autowired
     private CategoryService categoryService;
 
-    @GetMapping
+    @GetMapping("/all")
     public List<Category> getAllCategories() {
         return categoryService.getAllCategories();
     }
 
     @GetMapping("/{id}")
     public Category getCategoryById(@PathVariable Long id) {
-        return categoryService.getCategoryById(id);
+        return categoryService.getCategoryById(id).orElse(null);
     }
 
-    @PostMapping
+    @PostMapping("/new")
     public Category addCategory(@RequestBody Category category) {
         return categoryService.saveCategory(category);
     }

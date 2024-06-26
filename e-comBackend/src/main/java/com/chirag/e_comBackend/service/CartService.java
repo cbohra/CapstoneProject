@@ -15,8 +15,8 @@ public class CartService {
     @Autowired
     private CartRepository cartRepository;
 
-    public Cart addItemToCart(CartItem cartItem) {
-        Cart cart = cartRepository.findById(cartItem.getCart().getId()).orElse(new Cart());
+    public Cart addItemToCart(Long cartID, CartItem cartItem) {
+        Cart cart = cartRepository.findById(cartID).orElse(new Cart());
         cart.getItems().add(cartItem);
         return cartRepository.save(cart);
     }

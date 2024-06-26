@@ -15,6 +15,16 @@ public class Product {
     @JoinColumn(name = "category_id")
     private Category category;
 
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
+    }
+
+    private String imageURL;
+
     // Getters and Setters
 
     public Long getId() {

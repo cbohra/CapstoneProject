@@ -4,6 +4,7 @@ import axios from "axios";
 import ProductCard from "../components/ProductCard";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 // const products = [
 //   {
 //     imageUrl:
@@ -63,8 +64,40 @@ import Container from "@mui/material/Container";
 //   },
 // ];
 
+// const Home = () => {
+//   const [products, setProducts] = useState([]);
+
+//   useEffect(() => {
+//     const fetchProducts = async () => {
+//       try {
+//         const response = await axios.get(
+//           "http://localhost:8080/products/getlisting"
+//         );
+//         setProducts(response.data);
+//       } catch (error) {
+//         console.error("Error fetching products:", error);
+//       }
+//     };
+
+//     fetchProducts();
+//   }, []);
+
+//   return (
+//     <Container>
+//       <Grid container spacing={2}>
+//         {products.map((product, index) => (
+//           <Grid item xs={12} sm={6} md={4} key={index}>
+//             <ProductCard product={product} />
+//           </Grid>
+//         ))}
+//       </Grid>
+//     </Container>
+//   );
+// };
+
 const Home = () => {
   const [products, setProducts] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -74,6 +107,7 @@ const Home = () => {
         );
         setProducts(response.data);
       } catch (error) {
+        setError("Error fetching products. Please try again later.");
         console.error("Error fetching products:", error);
       }
     };
@@ -83,6 +117,14 @@ const Home = () => {
 
   return (
     <Container>
+      <Typography variant="h4" component="h1" gutterBottom>
+        Product Listings
+      </Typography>
+      {error && (
+        <Typography variant="body1" color="error" gutterBottom>
+          {error}
+        </Typography>
+      )}
       <Grid container spacing={2}>
         {products.map((product, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
